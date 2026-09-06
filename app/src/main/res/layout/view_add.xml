@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/sc_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <TextView android:id="@+id/tvAddTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nova movimentação" android:textColor="@color/sc_text" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Registre uma receita ou despesa" android:textColor="@color/sc_text_secondary" android:textSize="13sp" />
+
+        <RadioGroup android:id="@+id/rgType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbIncome" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Receita" android:textColor="@color/sc_text" />
+            <RadioButton android:id="@+id/rbExpense" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:checked="true" android:text="Despesa" android:textColor="@color/sc_text" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Descrição">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Valor (R$)" app:prefixText="R$ ">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etValue" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Categoria" android:textColor="@color/sc_text_secondary" android:textSize="12sp" />
+        <Spinner android:id="@+id/spCategory" android:layout_width="match_parent" android:layout_height="52dp" android:backgroundTint="@color/sc_primary" />
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Data (dd/MM/aaaa)">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Forma de pagamento/recebimento" android:textColor="@color/sc_text_secondary" android:textSize="12sp" />
+        <Spinner android:id="@+id/spPayment" android:layout_width="match_parent" android:layout_height="52dp" android:backgroundTint="@color/sc_primary" />
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Observação (opcional)">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:minLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSaveTransaction" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="22dp" android:text="Salvar movimentação" app:backgroundTint="@color/sc_primary" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnClearTransaction" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Limpar campos" android:textColor="@color/sc_primary" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

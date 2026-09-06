@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/sc_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perfil" android:textColor="@color/sc_text" android:textSize="26sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="88dp" android:layout_height="88dp" android:background="@drawable/avatar_circle" android:gravity="center" android:text="WS" android:textColor="@color/sc_primary" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="William Schroeder" android:textColor="@color/sc_text" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Saldo Certo • versão acadêmica" android:textColor="@color/sc_text_secondary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" app:cardBackgroundColor="@color/sc_surface" app:cardCornerRadius="14dp" app:strokeColor="@color/sc_border" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sobre o aplicativo" android:textColor="@color/sc_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Aplicativo Android desenvolvido em Java e Gradle para controle de receitas, despesas, histórico e metas financeiras. Os dados das movimentações funcionam offline e ficam salvos no aparelho." android:textColor="@color/sc_text_secondary" android:textSize="13sp" android:lineSpacingExtra="3dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:cardBackgroundColor="@color/sc_surface" app:cardCornerRadius="14dp" app:strokeColor="@color/sc_border" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recursos implementados" android:textColor="@color/sc_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="• Cadastro de receitas e despesas\n• Edição e exclusão de movimentações\n• Cálculo automático do saldo\n• Filtros no histórico\n• Metas financeiras\n• Persistência local/offline\n• Consumo de API externa para cotação" android:textColor="@color/sc_text_secondary" android:textSize="13sp" android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnResetDemo" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:text="Restaurar dados de demonstração" android:textColor="@color/sc_expense" app:strokeColor="@color/sc_expense" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

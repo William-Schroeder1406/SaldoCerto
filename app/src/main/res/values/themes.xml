@@ -1,0 +1,14 @@
+<resources>
+    <style name="Base.Theme.SaldoCerto" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sc_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/sc_primary_dark</item>
+        <item name="colorSurface">@color/sc_surface</item>
+        <item name="android:colorAccent">@color/sc_primary</item>
+        <item name="android:navigationBarColor">@color/sc_surface</item>
+        <item name="android:statusBarColor">@color/sc_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+    <style name="Theme.SaldoCerto" parent="Base.Theme.SaldoCerto" />
+</resources>

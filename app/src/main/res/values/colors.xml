@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sc_primary">#249379</color>
+    <color name="sc_primary_dark">#176B59</color>
+    <color name="sc_primary_light">#E6F4F0</color>
+    <color name="sc_background">#F7F8FA</color>
+    <color name="sc_surface">#FFFFFF</color>
+    <color name="sc_text">#1E2835</color>
+    <color name="sc_text_secondary">#697386</color>
+    <color name="sc_income">#249379</color>
+    <color name="sc_expense">#D95B5B</color>
+    <color name="sc_warning">#E9B949</color>
+    <color name="sc_border">#E1E5EA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

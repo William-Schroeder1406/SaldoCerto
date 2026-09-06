@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sc_background"
+    android:paddingStart="20dp"
+    android:paddingTop="22dp"
+    android:paddingEnd="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Metas financeiras" android:textColor="@color/sc_text" android:textSize="26sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Acompanhe seus objetivos de economia" android:textColor="@color/sc_text_secondary" android:textSize="13sp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnAddGoal" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:text="Criar nova meta" app:backgroundTint="@color/sc_primary" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:id="@+id/goalsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="28dp" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
